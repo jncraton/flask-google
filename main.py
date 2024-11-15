@@ -2,7 +2,7 @@ from flask import Flask, session, abort, redirect, request
 from google_auth_oauthlib.flow import Flow
 
 app = Flask("app")
-app.secret_key = "NtkWyoBfY8wCjqh7"
+app.secret_key = "NtkWyoBfY8wCjqh7" # Be sure to use your own pseudorandom secret
 
 # Initialze oauthlib Flow
 # https://google-auth-oauthlib.readthedocs.io/en/latest/reference/google_auth_oauthlib.flow.html
