@@ -23,8 +23,7 @@ def login():
     We store a key for this URL in the user session to verify after the flow completes
     """
 
-    authorization_url, _ = flow.authorization_url()
-    return redirect(authorization_url)
+    return redirect(flow.authorization_url()[0])
 
 
 @app.route("/callback")
