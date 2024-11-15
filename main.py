@@ -28,7 +28,11 @@ def login():
 
 @app.route("/callback")
 def callback():
-    """OAuth callback to complete login"""
+    """OAuth callback to complete login
+
+    We store the user's email in the session state. This is used later to determine
+    if a session is logged in or not.
+    """
 
     flow.fetch_token(authorization_response=request.url)
     auth_session = flow.authorized_session()
