@@ -3,7 +3,7 @@ Flask App with Google Authentication
 
 This is an example [flask](https://flask.palletsprojects.com/en/stable/) application that demonstrates implementing Google authentication using [google_auth_oauthlib](https://pypi.org/project/google-auth-oauthlib/).
 
-This app doesn't "do" much on it's own, but it can be a useful resource to learn how Google authentication works.
+This app doesn't do much on it's own, but it can be a useful resource to learn how Google authentication works.
 
 Usage
 -----
