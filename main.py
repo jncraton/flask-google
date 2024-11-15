@@ -75,4 +75,4 @@ def require_login(function):
 def private():
     """A private route requiring login using decorator"""
 
-    return f"Private endpoint requiring login"
+    return "Private endpoint requiring login"
