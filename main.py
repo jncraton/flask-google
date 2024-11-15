@@ -55,8 +55,8 @@ def index():
 
     if "email" in session:
         return f"Logged in as {session['email']}<a href='/logout'><button>Logout</button></a>"
-    else:
-        return "Hello World <a href='/login'><button>Login</button></a>"
+
+    return "Hello World <a href='/login'><button>Login</button></a>"
 
 
 def require_login(function):
@@ -65,8 +65,7 @@ def require_login(function):
     def wrapper(*args, **kwargs):
         if "email" not in session:
             return abort(401)
-        else:
-            return function()
+        return function()
 
     return wrapper
 
