@@ -62,7 +62,7 @@ def index():
 def require_login(function):
     """Decorator to abort if we are not logged in"""
 
-    def wrapper(*args, **kwargs):
+    def wrapper():
         if "email" not in session:
             return abort(401)
         return function()
