@@ -1,3 +1,5 @@
+"""Example flask web app with Google authentication"""
+
 from flask import Flask, session, abort, redirect, request
 from google_auth_oauthlib.flow import Flow
 
